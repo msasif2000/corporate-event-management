@@ -1,0 +1,22 @@
+Conferences and Seminars
+Trade Shows
+Industry Expo
+Team Building Workshops
+Product Launches
+Corporate Meetings 
+Award Ceremony
+Charity Fundraiser
+
+
+
+id, category_id, event_name, event_features, event_image, event_title, booking_price, booking_place
+
+
+https://i.ibb.co/zmZC3bV/corporate.jpg
+    https://i.ibb.co/S5d75Kx/trade.jpg
+    https://i.ibb.co/BCpKWCs/industry.jpg
+    https://i.ibb.co/gMTPVWj/team.jpg
+    https://i.ibb.co/YDZKW2D/product.jpg
+    https://i.ibb.co/t3LMCCx/meeting.jpg
+    https://i.ibb.co/Fsw0Pyq/award.jpg
+    https://i.ibb.co/nsV0FhP/charity.jpg
