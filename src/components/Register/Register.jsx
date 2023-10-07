@@ -70,6 +70,12 @@ const Register = () => {
                                 <input type="password" name="password" placeholder="password" className="input input-bordered" required />
 
                             </div>
+                            <div className="form-control">
+                                <label className="label cursor-pointer">
+                                    <span className="label-text font-bold text-xl">Accept <Link to="/terms&condition" className="underline">Term & Conditions</Link></span>
+                                    <input type="checkbox" className="checkbox checkbox-secondary" required />
+                                </label>
+                            </div>
                             <div className="form-control mt-6">
                                 <button className="text-white py-2 rounded-xl font-bold bg-orange-600">Register</button>
                             </div>
