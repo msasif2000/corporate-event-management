@@ -24,20 +24,22 @@ const Home = () => {
             <Header></Header>
             <Navbar></Navbar>
             <Banner></Banner>
-            <div className="lg:flex gap-6">
+            <div className="lg:flex gap-4">
                 <div className="lg:w-1/4 lg:p-0 p-4">
                     <LeftSidebar></LeftSidebar>
                 </div>
                 <div className="lg:w-2/4 mb-8 lg:p-0 p-4">
                     <h2 className="text-2xl font-bold mb-8">Our Services</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                         {
                             events.slice(0, dataLength).map(event => <Event key={event.id} event={event}></Event>)
                         }
 
                     </div>
-                    <div className={dataLength >= events.length && 'hidden'}>
-                        <button onClick={() => setDataLength(events.length)} className="btn btn-sm bg-orange-600 text-white mt-8">See All</button>
+                    <div className="flex justify-center">
+                        <div className={dataLength >= events.length && 'hidden'}>
+                            <button onClick={() => setDataLength(events.length)} className="btn btn-sm bg-orange-600 text-white mt-8">See All</button>
+                        </div>
                     </div>
                 </div>
                 <div className="lg:w-1/4 lg:p-0 p-4">

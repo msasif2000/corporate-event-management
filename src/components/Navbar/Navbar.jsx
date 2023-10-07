@@ -33,8 +33,8 @@ const Navbar = () => {
 
     </>
     return (
-        <div className="mb-4">
-            <div className="navbar bg-base-100">
+        <div className="mb-4 ">
+            <div className="navbar bg-gradient-to-r from-orange-100 from-10% via-sky-100 via-30% to-emerald-100 to-90% ...">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost md:hidden">
@@ -53,7 +53,7 @@ const Navbar = () => {
                 <div className="navbar-end md:gap-2 gap-1">
                     {
                         user ?
-                            <h1 className="text-xl font-bold text-blue-600 flex lg:flex md:hidden">{user.email}</h1>
+                            <h1 className="text-xl font-bold text-blue-600 flex lg:flex hidden">{user.email}</h1>
                             :
                             ''
                     }
@@ -62,9 +62,9 @@ const Navbar = () => {
                             <>
                                 {
                                     photoURL ?
-                                        <img src={user.photoURL} alt="" className="w-10 rounded-full bg-blue-300 p-1" />
+                                        <Link to="/profile"><img src={user.photoURL} alt="" className="w-10 rounded-full bg-blue-300 p-1" /></Link>
                                         :
-                                        <img src="https://i.ibb.co/R3PnR7z/user.png" alt="" className="w-10 rounded-full bg-blue-300 p-1" />
+                                        <Link to="/profile"><img src="https://i.ibb.co/R3PnR7z/user.png" alt="" className="w-10 rounded-full bg-blue-300 p-1" /></Link>
                                 }
                             </>
 

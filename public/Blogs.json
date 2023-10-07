@@ -1,65 +1,222 @@
 [
     {
-      "id": 1,
-      "title": "Success Story: Annual Corporate Conference",
-      "author": "John Doe",
-      "date": "2023-03-15",
-      "category": "Corporate Conferences",
-      "image": "conference.jpg",
-      "content": "Our recent Annual Corporate Conference was a resounding success, bringing together industry leaders and experts from around the world. The event featured thought-provoking keynotes, insightful panel discussions, and valuable networking opportunities. Attendees left inspired, armed with new knowledge and connections to drive their businesses forward."
+        "blog_id": 1,
+        "blog_title": "Success Story: Annual Corporate Conference",
+        "author": "John Doe",
+        "date": "2023-03-15",
+        "category_id": 1,
+        "category": "Conferences and Seminars",
+        "image": "https://i.ibb.co/MV1q8BH/car1.jpg",
+        "content": "Our recent Annual Corporate Conference was a resounding success, bringing together industry leaders and experts from around the world. The event featured thought-provoking keynotes, insightful panel discussions, and valuable networking opportunities. Attendees left inspired, armed with new knowledge and connections to drive their businesses forward."
     },
     {
-      "id": 2,
-      "title": "Networking Tips for Industry Expos",
-      "author": "Jane Smith",
-      "date": "2023-04-02",
-      "category": "Industry Expo",
-      "image": "industry-expo.jpg",
-      "content": "Navigating industry expos can be daunting, but with our expert networking tips, you'll make the most of every opportunity. We delve into effective icebreakers, strategies for approaching exhibitors, and leveraging technology to expand your network. Attendees at our last industry expo left with a stack of business cards and promising partnerships."
+        "blog_id": 2,
+        "blog_title": "Networking Tips for Industry Expos",
+        "author": "Jane Smith",
+        "date": "2023-04-02",
+        "category_id": 3,
+        "category": "Industry Expo",
+        "image": "https://i.ibb.co/MV1q8BH/car1.jpg",
+        "content": "Navigating industry expos can be daunting, but with our expert networking tips, you'll make the most of every opportunity. We delve into effective icebreakers, strategies for approaching exhibitors, and leveraging technology to expand your network. Attendees at our last industry expo left with a stack of business cards and promising partnerships."
     },
     {
-      "id": 3,
-      "title": "Team Building Workshop: Boosting Employee Morale",
-      "author": "David Brown",
-      "date": "2023-05-20",
-      "category": "Team Building Workshops",
-      "image": "team-building.jpg",
-      "content": "Employee morale is a crucial factor in a company's success. Our team building workshop focuses on strengthening bonds, fostering collaboration, and boosting team spirit. Through interactive exercises and team challenges, we've witnessed remarkable transformations in workplace dynamics and overall employee satisfaction."
+        "blog_id": 3,
+        "blog_title": "Team Building Workshop: Boosting Employee Morale",
+        "author": "David Brown",
+        "date": "2023-05-20",
+        "category_id": 4,
+        "category": "Team Building Workshops",
+        "image": "https://i.ibb.co/RBvhWCL/car4.jpg",
+        "content": "Employee morale is a crucial factor in a company's success. Our team building workshop focuses on strengthening bonds, fostering collaboration, and boosting team spirit. Through interactive exercises and team challenges, we've witnessed remarkable transformations in workplace dynamics and overall employee satisfaction."
     },
     {
-      "id": 4,
-      "title": "Product Launch Event: A Marketing Triumph",
-      "author": "Sarah Johnson",
-      "date": "2023-06-10",
-      "category": "Product Launches",
-      "image": "product-launch.jpg",
-      "content": "Launching a new product is an exciting but challenging endeavor. Our recent product launch event was a marketing triumph, generating buzz and driving sales. Learn how we crafted a compelling launch strategy, engaged influencers, and captivated our audience to achieve remarkable results."
+        "blog_id": 4,
+        "blog_title": "Product Launch Event: A Marketing Triumph",
+        "author": "Sarah Johnson",
+        "date": "2023-06-10",
+        "category_id": 5,
+        "category": "Product Launches",
+        "image": "https://i.ibb.co/RBvhWCL/car4.jpg",
+        "content": "Launching a new product is an exciting but challenging endeavor. Our recent product launch event was a marketing triumph, generating buzz and driving sales. Learn how we crafted a compelling launch strategy, engaged influencers, and captivated our audience to achieve remarkable results."
     },
     {
-      "id": 5,
-      "title": "Strategies for Successful Corporate Meetings",
-      "author": "Michael Anderson",
-      "date": "2023-07-05",
-      "category": "Corporate Meetings",
-      "image": "corporate-meeting.jpg",
-      "content": "Corporate meetings are the backbone of effective communication within organizations. In this blog, we share strategies for planning and conducting successful corporate meetings. From setting clear objectives to managing participant engagement, these insights will ensure your meetings are productive and impactful."
+        "blog_id": 5,
+        "blog_title": "Strategies for Successful Corporate Meetings",
+        "author": "Michael Anderson",
+        "date": "2023-07-05",
+        "category_id": 6,
+        "category": "Corporate Meetings",
+        "image": "https://i.ibb.co/MV1q8BH/car1.jpg",
+        "content": "Corporate meetings are the backbone of effective communication within organizations. In this blog, we share strategies for planning and conducting successful corporate meetings. From setting clear objectives to managing participant engagement, these insights will ensure your meetings are productive and impactful."
     },
     {
-      "id": 6,
-      "title": "Gala Night: Celebrating Excellence",
-      "author": "Emily Clark",
-      "date": "2023-08-18",
-      "category": "Award Ceremony",
-      "image": "award-ceremony.jpg",
-      "content": "Our recent Gala Night was a grand celebration of excellence within our industry. We honored outstanding individuals and organizations for their remarkable achievements. The event was filled with glamour, speeches, and heartfelt moments, creating lasting memories for all who attended."
+        "blog_id": 6,
+        "blog_title": "Gala Night: Celebrating Excellence",
+        "author": "Emily Clark",
+        "date": "2023-08-18",
+        "category_id": 7,
+        "category": "Award Ceremony",
+        "image": "https://i.ibb.co/RBvhWCL/car4.jpg",
+        "content": "Our recent Gala Night was a grand celebration of excellence within our industry. We honored outstanding individuals and organizations for their remarkable achievements. The event was filled with glamour, speeches, and heartfelt moments, creating lasting memories for all who attended."
     },
     {
-      "id": 7,
-      "title": "Charity Fundraiser: Making a Difference",
-      "author": "Robert Green",
-      "date": "2023-09-12",
-      "category": "Charity Fundraiser",
-      "image": "charity-fundraiser.jpg",
-      "content": "At our recent charity fundraiser, we came together as a community to make a real difference. With generous donations and a commitment to a noble cause, we raised substantial funds for those in need. Read about the heartwarming stories and impact we've created through our collective efforts."
+        "blog_id": 7,
+        "blog_title": "Charity Fundraiser: Making a Difference",
+        "author": "Robert Green",
+        "date": "2023-09-12",
+        "category_id": 8,
+        "category": "Charity Fundraiser",
+        "image": "https://i.ibb.co/MV1q8BH/car1.jpg",
+        "content": "At our recent charity fundraiser, we came together as a community to make a real difference. With generous donations and a commitment to a noble cause, we raised substantial funds for those in need. Read about the heartwarming stories and impact we've created through our collective efforts."
+    },
+    {
+        "blog_id": 8,
+        "blog_title": "Navigating International Conferences",
+        "author": "Olivia White",
+        "date": "2023-10-02",
+        "category_id": 1,
+        "category": "Conferences and Seminars",
+        "image": "https://i.ibb.co/hywNnPH/car5.jpg",
+        "content": "International conferences offer unique challenges and opportunities. In this blog, we share tips for making the most of your experience, from overcoming language barriers to building global connections."
+    },
+    {
+        "blog_id": 9,
+        "blog_title": "Innovations Unveiled at Tech Expo",
+        "author": "Daniel Lee",
+        "date": "2023-10-12",
+        "category_id": 2,
+        "category": "Trade Shows",
+        "image": "https://i.ibb.co/MV1q8BH/car1.jpg",
+        "content": "The latest tech expo showcased groundbreaking innovations in the world of technology. From AI advancements to cutting-edge gadgets, find out what stole the spotlight at this year's event."
+    },
+    {
+        "blog_id": 10,
+        "blog_title": "Healthcare Summit: Shaping the Future",
+        "author": "Sophia Adams",
+        "date": "2023-11-05",
+        "category_id": 3,
+        "category": "Industry Expo",
+        "image": "https://i.ibb.co/hywNnPH/car5.jpg",
+        "content": "The healthcare summit brought together healthcare professionals and policymakers to discuss the future of healthcare. Learn how the event addressed critical issues and proposed innovative solutions."
+    },
+    {
+        "blog_id": 11,
+        "blog_title": "Team Building Workshop Success Stories",
+        "author": "William Turner",
+        "date": "2023-11-20",
+        "category_id": 4,
+        "category": "Team Building Workshops",
+        "image": "https://i.ibb.co/MV1q8BH/car1.jpg",
+        "content": "Discover inspiring success stories from our team building workshops. These stories highlight the positive impact of teamwork, leadership development, and improved communication within organizations."
+    },
+    {
+        "blog_id": 12,
+        "blog_title": "Product Launch Strategies in a Digital Age",
+        "author": "Sophie Baker",
+        "date": "2023-12-08",
+        "category_id": 5,
+        "category": "Product Launches",
+        "image": "https://i.ibb.co/MV1q8BH/car1.jpg",
+        "content": "The digital age has revolutionized product launches. This blog explores effective strategies for launching products in a highly competitive online marketplace."
+    },
+    {
+        "blog_id": 13,
+        "blog_title": "Mastering Corporate Meeting Efficiency",
+        "author": "Andrew Mitchell",
+        "date": "2024-01-10",
+        "category_id": 6,
+        "category": "Corporate Meetings",
+        "image": "https://i.ibb.co/hywNnPH/car5.jpg",
+        "content": "Efficiency is key in corporate meetings. Discover proven techniques for streamlining meetings, increasing productivity, and achieving desired outcomes."
+    },
+    {
+        "blog_id": 14,
+        "blog_title": "Excellence Rewarded: Award Ceremony Highlights",
+        "author": "Ella Harris",
+        "date": "2024-02-20",
+        "category_id": 7,
+        "category": "Award Ceremony",
+        "image": "https://i.ibb.co/MV1q8BH/car1.jpg",
+        "content": "Relive the unforgettable moments from our recent award ceremony. From emotional speeches to outstanding achievements, this event celebrated excellence."
+    },
+    {
+        "blog_id": 15,
+        "blog_title": "Creating Impact: Charity Fundraiser Success",
+        "author": "Benjamin Turner",
+        "date": "2024-03-15",
+        "category_id": 8,
+        "category": "Charity Fundraiser",
+        "image": "https://i.ibb.co/MV1q8BH/car1.jpg",
+        "content": "Our charity fundraiser made a significant impact on the lives of those in need. Learn about the projects supported, the people helped, and the difference we've made together."
+    },
+    {
+        "blog_id": 16,
+        "blog_title": "Digital Marketing Insights from Marketing Expo",
+        "author": "Emma Parker",
+        "date": "2024-04-10",
+        "category_id": 2,
+        "category": "Trade Shows",
+        "image": "https://i.ibb.co/gTbh2x6/car2.jpg",
+        "content": "Explore the latest digital marketing trends and insights unveiled at the Marketing Expo. Discover strategies to stay ahead in the ever-evolving digital landscape."
+    },
+    {
+        "blog_id": 17,
+        "blog_title": "Industry Expo: A Glimpse into Tomorrow",
+        "author": "James Davis",
+        "date": "2024-05-22",
+        "category_id": 3,
+        "category": "Industry Expo",
+        "image": "https://i.ibb.co/MV1q8BH/car1.jpg",
+        "content": "The Industry Expo offered a sneak peek into the future of various industries. From green technology to automation, this event showcased what's on the horizon."
+    },
+    {
+        "blog_id": 18,
+        "blog_title": "Effective Networking at Conferences",
+        "author": "Linda Wilson",
+        "date": "2024-06-15",
+        "category_id": 1,
+        "category": "Conferences and Seminars",
+        "image": "https://i.ibb.co/gTbh2x6/car2.jpg",
+        "content": "Networking is a vital skill at conferences. Learn how to make meaningful connections, engage in fruitful conversations, and maximize your conference experience."
+    },
+    {
+        "blog_id": 19,
+        "blog_title": "Innovations in Team Building Workshops",
+        "author": "Chris Roberts",
+        "date": "2024-07-08",
+        "category_id": 4,
+        "category": "Team Building Workshops",
+        "image": "https://i.ibb.co/MV1q8BH/car1.jpg",
+        "content": "Team building workshops have evolved with innovative approaches. Discover how gamification, technology, and experiential learning are shaping the future of team building."
+    },
+    {
+        "blog_id": 20,
+        "blog_title": "Corporate Meetings: A Guide to Success",
+        "author": "Sophia Adams",
+        "date": "2024-08-19",
+        "category_id": 6,
+        "category": "Corporate Meetings",
+        "image": "https://i.ibb.co/MV1q8BH/car1.jpg",
+        "content": "Successful corporate meetings don't happen by chance. This comprehensive guide covers everything from agenda planning to effective follow-ups for productive meetings."
+    },
+    {
+        "blog_id": 21,
+        "blog_title": "Launching Products in Competitive Markets",
+        "author": "Michael Walker",
+        "date": "2024-09-22",
+        "category_id": 5,
+        "category": "Product Launches",
+        "image": "https://i.ibb.co/gTbh2x6/car2.jpg",
+        "content": "In competitive markets, launching a product requires a strategic edge. Explore strategies and tactics to ensure your product launch stands out and captures market share."
+    },
+    {
+        "blog_id": 22,
+        "blog_title": "Event Planning Insights from Award Ceremonies",
+        "author": "Emma Davis",
+        "date": "2024-10-15",
+        "category_id": 7,
+        "category": "Award Ceremony",
+        "image": "https://i.ibb.co/MV1q8BH/car1.jpg",
+        "content": "Behind every successful award ceremony is meticulous event planning. Gain insights into the art of planning and executing unforgettable award ceremonies."
     }
-  ]
+]

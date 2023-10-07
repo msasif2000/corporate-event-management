@@ -28,9 +28,9 @@ const EventDetails = () => {
             <ToastContainer />
             <Header></Header>
             <Navbar></Navbar>
-            <div className="md:flex gap-6">
+            <div className="md:flex lg:gap-6 gap-2">
                 <div className="lg:w-2/3 lg:flex p-4 gap-4 items-center">
-                    <div className="grid w-3/5 grid-cols-2 justify-center mx-auto border-2 border-blue-600 rounded mb-4">
+                    <div className="grid md:w-3/5 grid-cols-2 justify-center mx-auto border-2 border-blue-600 rounded mb-4">
                         <img src={currentEvent.prev_image1} alt="" className="w-full h-[150px]" />
                         <img src={currentEvent.prev_image2} alt="" className="w-full h-[150px]" />
                         <img src={currentEvent.prev_image3} alt="" className="w-full h-[150px]" />

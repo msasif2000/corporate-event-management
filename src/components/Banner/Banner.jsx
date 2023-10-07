@@ -12,25 +12,25 @@ const Banner = () => {
         <div className="my-8">
             <div className="carousel w-full">
                 <div id="item1" className="carousel-item w-full">
-                    <img src={car1} className="w-3/5 h-[400px] mx-auto shadow-2xl shadow-sky-300" />
+                    <img src={car1} className="lg:w-3/5  md:h-[400px] h-[330px] mx-auto shadow-2xl shadow-sky-300" />
                 </div>
                 <div id="item2" className="carousel-item w-full">
-                    <img src={car2} className="w-3/5 h-[400px] mx-auto" />
+                    <img src={car2} className="lg:w-3/5  md:h-[400px] h-[330px] mx-auto shadow-2xl shadow-sky-300" />
                 </div>
                 <div id="item3" className="carousel-item w-full">
-                    <img src={car3} className="w-3/5 h-[400px] mx-auto" />
+                    <img src={car3} className="lg:w-3/5  md:h-[400px] h-[330px] mx-auto shadow-2xl shadow-sky-300" />
                 </div>
                 <div id="item4" className="carousel-item w-full">
-                    <img src={car4} className="w-3/5 h-[400px] mx-auto" />
+                    <img src={car4} className="lg:w-3/5  md:h-[400px] h-[330px] mx-auto shadow-2xl shadow-sky-300" />
                 </div>
                 <div id="item5" className="carousel-item w-full">
-                    <img src={car5} className="w-3/5 h-[400px] mx-auto" />
+                    <img src={car5} className="lg:w-3/5  md:h-[400px] h-[330px] mx-auto shadow-2xl shadow-sky-300" />
                 </div>
                 <div id="item6" className="carousel-item w-full">
-                    <img src={car6} className="w-3/5 h-[400px] mx-auto" />
+                    <img src={car6} className="lg:w-3/5  md:h-[400px] h-[330px] mx-auto shadow-2xl shadow-sky-300" />
                 </div>
                 <div id="item7" className="carousel-item w-full">
-                    <img src={car7} className="w-3/5 h-[400px] mx-auto" />
+                    <img src={car7} className="lg:w-3/5  md:h-[400px] h-[330px] mx-auto shadow-2xl shadow-sky-300" />
                 </div>
             </div>
             <div className="flex justify-center w-full py-2 gap-2">

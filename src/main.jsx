@@ -17,6 +17,7 @@ import EventDetails from './components/Event/EventDetails';
 import About from './pages/About/About';
 import TermsCondition from './components/TermsCondition/TermsCondition';
 import Profile from './pages/Profile/Profile';
+import Blogs from './pages/Blogs/Blogs';
 
 
 const router = createBrowserRouter([
@@ -58,6 +59,11 @@ const router = createBrowserRouter([
       {
         path: "/profile",
         element: <Profile></Profile>
+      },
+      {
+        path: "/blogs",
+        element: <Blogs></Blogs>,
+        loader: () => fetch('/Blogs.json')
       }
     ]
   },
