@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import {PropTypes} from 'prop-types'
+import  PropTypes  from 'prop-types'
 import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 import { auth } from "../../firebase/firebase_config";
 
@@ -8,7 +8,7 @@ const googleProvider = new GoogleAuthProvider();
 export const AuthContext = createContext();
 
 
-const AuthProvider = ({children}) => {
+const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
 
@@ -22,21 +22,21 @@ const AuthProvider = ({children}) => {
         setLoading(true);
         return signInWithEmailAndPassword(auth, email, password)
     }
-    const googleLogin = () =>{
+    const googleLogin = () => {
         setLoading(true);
         return signInWithPopup(auth, googleProvider);
     }
 
-    const userLogout = () =>{
+    const userLogout = () => {
         setLoading(true);
         return signOut(auth);
     }
 
     useEffect(() => {
         const unsubscribed = onAuthStateChanged(auth, (currentUser) => {
-            if(currentUser){
+            if (currentUser) {
                 setUser(currentUser);
-            setLoading(false);
+                setLoading(false);
             }
             else {
                 setUser(null);
@@ -45,7 +45,7 @@ const AuthProvider = ({children}) => {
         return () => unsubscribed;
     }, [])
 
-    const authentications ={user, googleLogin, createUser, userLogin, userLogout, loading}
+    const authentications = { user, googleLogin, createUser, userLogin, userLogout, loading }
     return (
         <AuthContext.Provider value={authentications}>
             {children}
@@ -53,7 +53,7 @@ const AuthProvider = ({children}) => {
     );
 };
 
-AuthProvider.propTypes ={
-    children:PropTypes.node.isRequired
+AuthProvider.propTypes = {
+    children: PropTypes.node.isRequired
 }
 export default AuthProvider;

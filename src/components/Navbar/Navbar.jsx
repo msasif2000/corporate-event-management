@@ -1,26 +1,35 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import './Navbar.css'
 import { GrUserManager } from "react-icons/gr";
 import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const Navbar = () => {
-    const { user, userLogout} = useContext(AuthContext)
+    const { user, userLogout } = useContext(AuthContext)
+    const location = useLocation();
+    const navigate = useNavigate();
 
+    const photoURL = user?.photoURL;
     const handleLogout = () => {
         userLogout()
-        .then(result => {
-            console.log(result)
-        })
-        .catch(error => {
-            console.log(error.message)
-        })
+            .then(result => {
+                console.log(result)
+                navigate(location.state?.from ? location.state.from : '/')
+            })
+            .catch(error => {
+                console.log(error.message)
+            })
     }
     const navLinks = <>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/blogs">Recent Blogs</NavLink></li>
         <li><NavLink to="/about">About us</NavLink></li>
-        <li><NavLink to="/profile">Your Profile</NavLink></li>
+        {
+            user ?
+                <li><NavLink to="/profile">Your Profile</NavLink></li>
+                :
+                ''
+        }
 
     </>
     return (
@@ -36,29 +45,37 @@ const Navbar = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="navbar-center hidden md:flex md:-ml-8">
+                <div className="navbar-center hidden md:flex md:-ml-[250px]">
                     <ul className="menu-horizontal px-1">
                         {navLinks}
                     </ul>
                 </div>
-                <div className="navbar-end gap-2">
+                <div className="navbar-end md:gap-2 gap-1">
                     {
                         user ?
                             <h1 className="text-xl font-bold text-blue-600 flex lg:flex md:hidden">{user.email}</h1>
                             :
-                            <h1 className="text-xl font-bold text-blue-600">Admin</h1>
+                            ''
                     }
                     {
                         user ?
-                            <img src="https://i.ibb.co/R3PnR7z/user.png" alt="" className="w-10 rounded-full bg-blue-300 p-1"/>
+                            <>
+                                {
+                                    photoURL ?
+                                        <img src={user.photoURL} alt="" className="w-10 rounded-full bg-blue-300 p-1" />
+                                        :
+                                        <img src="https://i.ibb.co/R3PnR7z/user.png" alt="" className="w-10 rounded-full bg-blue-300 p-1" />
+                                }
+                            </>
+
                             :
                             <GrUserManager className="text-4xl rounded-full p-1 bg-blue-300"></GrUserManager>
                     }
                     {
-                        user?
-                        <button onClick={handleLogout} className="bg-orange-600 py-1 px-4 text-white font-bold rounded">Logout</button>
-                        :
-                        <Link to="/login" className="bg-orange-600 py-1 px-4 text-white font-bold rounded">Login</Link>
+                        user ?
+                            <button onClick={handleLogout} className="bg-orange-600 py-1 px-4 text-white font-bold rounded">Logout</button>
+                            :
+                            <Link to="/login" className="bg-orange-600 py-1 px-4 text-white font-bold rounded">Login</Link>
                     }
                 </div>
             </div>

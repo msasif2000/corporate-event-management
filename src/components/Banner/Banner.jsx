@@ -12,7 +12,7 @@ const Banner = () => {
         <div className="my-8">
             <div className="carousel w-full">
                 <div id="item1" className="carousel-item w-full">
-                    <img src={car1} className="w-3/5 h-[400px] mx-auto" />
+                    <img src={car1} className="w-3/5 h-[400px] mx-auto shadow-2xl shadow-sky-300" />
                 </div>
                 <div id="item2" className="carousel-item w-full">
                     <img src={car2} className="w-3/5 h-[400px] mx-auto" />

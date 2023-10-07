@@ -14,6 +14,9 @@ import AuthProvider from './components/Provider/AuthProvider';
 import EventCategory from './components/Event/EventCategory';
 import PrivateRoute from './components/Private/PrivateRoute';
 import EventDetails from './components/Event/EventDetails';
+import About from './pages/About/About';
+import TermsCondition from './components/TermsCondition/TermsCondition';
+import Profile from './pages/Profile/Profile';
 
 
 const router = createBrowserRouter([
@@ -43,6 +46,18 @@ const router = createBrowserRouter([
         path: "/eventDetails/:id",
         element: <PrivateRoute><EventDetails></EventDetails></PrivateRoute>,
         loader: () => fetch('/Events.json')
+      },
+      {
+        path: "/about",
+        element: <About></About>
+      },
+      {
+        path: "/termsCondition",
+        element: <TermsCondition></TermsCondition>
+      },
+      {
+        path: "/profile",
+        element: <Profile></Profile>
       }
     ]
   },

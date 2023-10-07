@@ -7,6 +7,7 @@ import Event from "../../components/Event/Event";
 import Banner from "../../components/Banner/Banner";
 
 
+
 const Home = () => {
     const [events, setEvents] = useState([]);
     const [dataLength, setDataLength] = useState(6);
@@ -33,9 +34,10 @@ const Home = () => {
                         {
                             events.slice(0, dataLength).map(event => <Event key={event.id} event={event}></Event>)
                         }
-                        <div className={dataLength >= events.length && 'hidden'}>
-                            <button onClick={() => setDataLength(events.length)} className="btn btn-sm bg-orange-600 text-white mt-4">See All</button>
-                        </div>
+
+                    </div>
+                    <div className={dataLength >= events.length && 'hidden'}>
+                        <button onClick={() => setDataLength(events.length)} className="btn btn-sm bg-orange-600 text-white mt-8">See All</button>
                     </div>
                 </div>
                 <div className="lg:w-1/4 lg:p-0 p-4">

@@ -4,38 +4,69 @@ import Navbar from "../Navbar/Navbar";
 import { FaGoogle, FaFacebook, FaGithub } from "react-icons/fa";
 import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const { googleLogin, userLogin } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
 
-    const handleLogin= (e) => {
+    const handleLogin = (e) => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
         userLogin(email, password)
-        .then(result => {
-            console.log(result.user)
-            navigate(location.state?.from ? location.state.from : '/')
-        })
-        .catch(error => {
-            console.log(error.message)
-        })
+            .then(result => {
+                console.log(result.user)
+                toast.success("Login Successful!", {
+                    position: toast.POSITION.TOP_CENTER, autoClose: 1500,
+                  });
+
+              
+                  setTimeout(() => {
+                    navigate(location.state?.from ? location.state.from : '/');
+                  }, 2000);
+            })
+            .catch(error => {
+                console.log(error.message)
+                toast.error("Email or Password error!", {
+                    position: toast.POSITION.TOP_CENTER, autoClose: 1500,
+                  });
+
+                  setTimeout(() => {
+                    navigate(location.state?.from ? location.state.from : '/login');
+                  }, 2000);
+            })
     }
 
     const handleGoogleLogin = () => {
         googleLogin()
             .then(result => {
                 console.log(result.user)
+                toast.success("Login Successful!", {
+                    position: toast.POSITION.TOP_CENTER, autoClose: 1500,
+                  });
+
+              
+                  setTimeout(() => {
+                    navigate(location.state?.from ? location.state.from : '/');
+                  }, 2000);
             })
             .catch(error => {
                 console.log(error.message)
+                toast.error("Email or Password error!", {
+                    position: toast.POSITION.TOP_CENTER, autoClose: 1500,
+                  });
+
+                  setTimeout(() => {
+                    navigate(location.state?.from ? location.state.from : '/login');
+                  }, 2000);
             })
     }
     return (
         <div>
+            
             <Header></Header>
             <Navbar></Navbar>
             <div className="hero min-h-screen  bg-gradient-to-r from-indigo-500 to-cyan-500...">
@@ -76,6 +107,7 @@ const Login = () => {
                     </div>
                 </div>
             </div>
+            <ToastContainer/>
         </div>
     );
 };

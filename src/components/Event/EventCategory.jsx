@@ -10,13 +10,14 @@ const EventCategory = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 mx-12 my-12">
+            <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 mx-12 my-12">
                 {
                     currentCategory.map(event => <Event key={event.id} event={event}></Event>)
                 }
-                <div>
-                    <button className="btn btn-sm bg-orange-600 mt-4"><Link to="/" className="text-white flex "><AiOutlineArrowLeft></AiOutlineArrowLeft> See All Category</Link></button>
-                </div>
+
+            </div>
+            <div className="my-8 flex justify-center">
+                <button className="btn btn-sm bg-orange-600 mt-4"><Link to="/" className="text-white flex "><AiOutlineArrowLeft></AiOutlineArrowLeft> See All Category</Link></button>
             </div>
         </div>
     );

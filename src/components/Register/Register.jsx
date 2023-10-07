@@ -1,15 +1,19 @@
 
-import { Link} from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
-import { FaGoogle, FaFacebook, FaGithub } from "react-icons/fa";
 import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
+
 
 const Register = () => {
 
-    const { googleLogin, createUser } = useContext(AuthContext);
+    const { createUser } = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
 
-    const handleRegister = (e) =>{
+    const handleRegister = (e) => {
         e.preventDefault();
         const name = e.target.name.value;
         const photoURL = e.target.photoURL.value;
@@ -17,24 +21,31 @@ const Register = () => {
         const password = e.target.password.value;
         console.log(name, photoURL, email, password)
         createUser(email, password)
-        .then(result => {
-            console.log(result.user)
-        })
-        .catch(error => {
-            console.log(error.message)
-        })
-        
-    }
-
-    const handleGoogleLogin = () => {
-        googleLogin()
             .then(result => {
                 console.log(result.user)
+                toast.success("Login Successful!", {
+                    position: toast.POSITION.TOP_CENTER, autoClose: 1500,
+                  });
+
+              
+                  setTimeout(() => {
+                    navigate(location.state?.from ? location.state.from : '/');
+                  }, 2000);
             })
             .catch(error => {
                 console.log(error.message)
+                toast.error("Email already registered! Please Login now", {
+                    position: toast.POSITION.TOP_CENTER, autoClose: 1500,
+                  });
+
+              
+                  setTimeout(() => {
+                    navigate(location.state?.from ? location.state.from : '/login');
+                  }, 2000);
             })
+
     }
+
     return (
         <div>
             <Navbar></Navbar>
@@ -72,22 +83,14 @@ const Register = () => {
                             </div>
                             <div className="form-control">
                                 <label className="label cursor-pointer">
-                                    <span className="label-text font-bold text-xl">Accept <Link to="/terms&condition" className="underline">Term & Conditions</Link></span>
+                                    <span className="label-text font-bold text-xl">Accept <Link to="/termsCondition" className="underline">Term & Conditions</Link></span>
                                     <input type="checkbox" className="checkbox checkbox-secondary" required />
                                 </label>
                             </div>
                             <div className="form-control mt-6">
                                 <button className="text-white py-2 rounded-xl font-bold bg-orange-600">Register</button>
                             </div>
-                            <div className="text-center">
-                                <p>or</p>
-                                <p>Register with</p>
-                                <div className="flex gap-4 justify-center pt-2">
-                                    <FaGoogle onClick={handleGoogleLogin} className="text-4xl p-2 bg-orange-500 rounded-full hover:bg-white"></FaGoogle>
-                                    <FaFacebook className="text-4xl p-2 bg-orange-500 rounded-full hover:bg-white"></FaFacebook>
-                                    <FaGithub className="text-4xl p-2 bg-orange-500 rounded-full hover:bg-white"></FaGithub>
-                                </div>
-                            </div>
+
                             <label className="label">
                                 <p>Already have an Account?<Link to="/login" className="underline">Login</Link></p>
                             </label>
@@ -95,6 +98,18 @@ const Register = () => {
                     </div>
                 </div>
             </div>
+            <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="colored"
+            />
         </div>
     );
 };

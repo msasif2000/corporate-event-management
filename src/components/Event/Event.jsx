@@ -1,8 +1,27 @@
 
 import { PropTypes } from 'prop-types';
-import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
+import { AuthContext } from '../Provider/AuthProvider';
+
+
 const Event = ({ event }) => {
+    const { user } = useContext(AuthContext)
     const { id, event_name, event_image, event_title, booking_price } = event;
+
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    const handlePage = () => {
+        toast.warning("Login First!", {
+            position: toast.POSITION.TOP_CENTER, autoClose: 1500,
+          });
+          setTimeout(() => {
+            navigate(location.state?.from ? location.state.from : '/login');
+          }, 2000);
+    }
 
     return (
         <div>
@@ -13,10 +32,16 @@ const Event = ({ event }) => {
                     <p className='font-bold text-blue-500'>{event_title}</p>
                     <div className="card-actions justify-end">
                         <p className="text-xl font-bold text-orange-600">Price: {booking_price} tk</p>
-                        <Link to={`/eventDetails/${id}`} className="btn btn-sm bg-blue-300 hover:bg-orange-600 hover:text-white">Details</Link>
+                        {
+                            user ?
+                                <Link to={`/eventDetails/${id}`} className="btn btn-sm bg-blue-300 hover:bg-orange-600 hover:text-white">Details</Link>
+                                :
+                                <button onClick={handlePage} className="btn btn-sm bg-blue-300 hover:bg-orange-600 hover:text-white">Details</button>
+                        }
                     </div>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };
