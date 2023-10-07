@@ -11,6 +11,10 @@ import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import AuthProvider from './components/Provider/AuthProvider';
+import EventCategory from './components/Event/EventCategory';
+import PrivateRoute from './components/Private/PrivateRoute';
+import EventDetails from './components/Event/EventDetails';
+
 
 const router = createBrowserRouter([
   {
@@ -29,6 +33,16 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>
+      },
+      {
+        path: "/eventCategory/:category_id",
+        element: <EventCategory></EventCategory>,
+        loader: () => fetch('/Events.json')
+      },
+      {
+        path: "/eventDetails/:id",
+        element: <PrivateRoute><EventDetails></EventDetails></PrivateRoute>,
+        loader: () => fetch('/Events.json')
       }
     ]
   },

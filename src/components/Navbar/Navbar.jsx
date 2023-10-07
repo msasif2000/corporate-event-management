@@ -20,11 +20,11 @@ const Navbar = () => {
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/blogs">Recent Blogs</NavLink></li>
         <li><NavLink to="/about">About us</NavLink></li>
-        <li><NavLink to="/career">Build Your Career</NavLink></li>
+        <li><NavLink to="/profile">Your Profile</NavLink></li>
 
     </>
     return (
-        <div>
+        <div className="mb-4">
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">

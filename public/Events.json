@@ -17,70 +17,6 @@
     },
     {
         "id": 2,
-        "category_id": 2,
-        "event_name": "Trade Shows",
-        "event_features": "Global exhibitors, business networking",
-        "event_image": "https://i.ibb.co/S5d75Kx/trade.jpg",
-        "event_title": "Global Business Expo",
-        "booking_price": 21000,
-        "booking_address": "123 Global Avenue, Globalville",
-        "manager": {
-            "name": "Sophie Wilson",
-            "email": "sophie.wilson@example.com",
-            "mobile": "+1 (234) 567-8901",
-            "image": "https://i.ibb.co/NVLwTNM/manager.jpg"
-        }
-    },
-    {
-        "id": 3,
-        "category_id": 3,
-        "event_name": "Industry Expo",
-        "event_features": "Cutting-edge technologies, innovation awards",
-        "event_image": "https://i.ibb.co/BCpKWCs/industry.jpg",
-        "event_title": "Innovation Awards Expo",
-        "booking_price": 24000,
-        "booking_address": "456 Innovation Street, Innovation Town",
-        "manager": {
-            "name": "Ethan Johnson",
-            "email": "ethan.johnson@example.com",
-            "mobile": "+1 (345) 678-9012",
-            "image": "https://i.ibb.co/NVLwTNM/manager.jpg"
-        }
-    },
-    {
-        "id": 4,
-        "category_id": 4,
-        "event_name": "Team Building Workshops",
-        "event_features": "Team bonding activities, leadership development",
-        "event_image": "https://i.ibb.co/gMTPVWj/team.jpg",
-        "event_title": "Team Bonding Workshop",
-        "booking_price": 29000,
-        "booking_address": "789 Bonding Road, Bondingville",
-        "manager": {
-            "name": "Aiden Adams",
-            "email": "aiden.adams@example.com",
-            "mobile": "+1 (456) 789-0123",
-            "image": "https://i.ibb.co/NVLwTNM/manager.jpg"
-        }
-    },
-    {
-        "id": 5,
-        "category_id": 5,
-        "event_name": "Product Launches",
-        "event_features": "New product unveilings, media coverage",
-        "event_image": "https://i.ibb.co/YDZKW2D/product.jpg",
-        "event_title": "Product Innovation Launch",
-        "booking_price": 20000,
-        "booking_address": "123 Innovation Avenue, Innovationville",
-        "manager": {
-            "name": "Emily Smith",
-            "email": "emily.smith@example.com",
-            "mobile": "+1 (567) 890-1234",
-            "image": "https://i.ibb.co/NVLwTNM/manager.jpg"
-        }
-    },
-    {
-        "id": 6,
         "category_id": 6,
         "event_name": "Corporate Meetings",
         "event_features": "Corporate strategy discussions, executive meetings",
@@ -96,7 +32,88 @@
         }
     },
     {
+        "id": 3,
+        "category_id": 2,
+        "event_name": "Trade Shows",
+        "event_features": "Global exhibitors, business networking",
+        "event_image": "https://i.ibb.co/S5d75Kx/trade.jpg",
+        "event_title": "Global Business Expo",
+        "booking_price": 21000,
+        "booking_address": "123 Global Avenue, Globalville",
+        "manager": {
+            "name": "Sophie Wilson",
+            "email": "sophie.wilson@example.com",
+            "mobile": "+1 (234) 567-8901",
+            "image": "https://i.ibb.co/NVLwTNM/manager.jpg"
+        }
+    },
+    {
+        "id": 4,
+        "category_id": 3,
+        "event_name": "Industry Expo",
+        "event_features": "Cutting-edge technologies, innovation awards",
+        "event_image": "https://i.ibb.co/BCpKWCs/industry.jpg",
+        "event_title": "Innovation Awards Expo",
+        "booking_price": 24000,
+        "booking_address": "456 Innovation Street, Innovation Town",
+        "manager": {
+            "name": "Ethan Johnson",
+            "email": "ethan.johnson@example.com",
+            "mobile": "+1 (345) 678-9012",
+            "image": "https://i.ibb.co/NVLwTNM/manager.jpg"
+        }
+    },
+    {
+        "id": 5,
+        "category_id": 4,
+        "event_name": "Team Building Workshops",
+        "event_features": "Team bonding activities, leadership development",
+        "event_image": "https://i.ibb.co/gMTPVWj/team.jpg",
+        "event_title": "Team Bonding Workshop",
+        "booking_price": 29000,
+        "booking_address": "789 Bonding Road, Bondingville",
+        "manager": {
+            "name": "Aiden Adams",
+            "email": "aiden.adams@example.com",
+            "mobile": "+1 (456) 789-0123",
+            "image": "https://i.ibb.co/NVLwTNM/manager.jpg"
+        }
+    },
+    {
+        "id": 6,
+        "category_id": 3,
+        "event_name": "Industry Expo",
+        "event_features": "Innovation showcases, networking",
+        "event_image": "https://i.ibb.co/BCpKWCs/industry.jpg",
+        "event_title": "Industry Innovation Expo",
+        "booking_price": 25500,
+        "booking_address": "789 Industry Street, Industry City",
+        "manager": {
+            "name": "Henry Martin",
+            "email": "henry.martin@example.com",
+            "mobile": "+1 (765) 432-1098",
+            "image": "https://i.ibb.co/NVLwTNM/manager.jpg"
+        }
+    },
+    {
         "id": 7,
+        "category_id": 5,
+        "event_name": "Product Launches",
+        "event_features": "New product unveilings, media coverage",
+        "event_image": "https://i.ibb.co/YDZKW2D/product.jpg",
+        "event_title": "Product Innovation Launch",
+        "booking_price": 20000,
+        "booking_address": "123 Innovation Avenue, Innovationville",
+        "manager": {
+            "name": "Emily Smith",
+            "email": "emily.smith@example.com",
+            "mobile": "+1 (567) 890-1234",
+            "image": "https://i.ibb.co/NVLwTNM/manager.jpg"
+        }
+    },
+    
+    {
+        "id": 8,
         "category_id": 7,
         "event_name": "Award Ceremony",
         "event_features": "Recognition awards, gala dinner",
@@ -112,7 +129,7 @@
         }
     },
     {
-        "id": 8,
+        "id": 9,
         "category_id": 8,
         "event_name": "Charity Fundraiser",
         "event_features": "Charity auctions, community support",
@@ -128,7 +145,7 @@
         }
     },
     {
-        "id": 9,
+        "id": 10,
         "category_id": 1,
         "event_name": "Conferences and Seminars",
         "event_features": "Expert speakers, knowledge sharing",
@@ -144,7 +161,7 @@
         }
     },
     {
-        "id": 10,
+        "id": 11,
         "category_id": 2,
         "event_name": "Trade Shows",
         "event_features": "Business exhibitions, product launches",
@@ -159,22 +176,7 @@
             "image": "https://i.ibb.co/NVLwTNM/manager.jpg"
         }
     },
-    {
-        "id": 11,
-        "category_id": 3,
-        "event_name": "Industry Expo",
-        "event_features": "Innovation showcases, networking",
-        "event_image": "https://i.ibb.co/BCpKWCs/industry.jpg",
-        "event_title": "Industry Innovation Expo",
-        "booking_price": 25500,
-        "booking_address": "789 Industry Street, Industry City",
-        "manager": {
-            "name": "Henry Martin",
-            "email": "henry.martin@example.com",
-            "mobile": "+1 (765) 432-1098",
-            "image": "https://i.ibb.co/NVLwTNM/manager.jpg"
-        }
-    },
+    
     {
         "id": 12,
         "category_id": 4,
@@ -209,6 +211,22 @@
     },
     {
         "id": 14,
+        "category_id": 1,
+        "event_name": "Conferences and Seminars",
+        "event_features": "Keynote speakers, knowledge exchange",
+        "event_image": "https://i.ibb.co/zmZC3bV/corporate.jpg",
+        "event_title": "Keynote Seminar Series",
+        "booking_price": 28000,
+        "booking_address": "789 Keynote Street, Keynoteville",
+        "manager": {
+            "name": "Oliver Davis",
+            "email": "oliver.davis@example.com",
+            "mobile": "+1 (987) 654-3210",
+            "image": "https://i.ibb.co/NVLwTNM/manager.jpg"
+        }
+    },
+    {
+        "id": 15,
         "category_id": 6,
         "event_name": "Corporate Meetings",
         "event_features": "Executive meetings, strategic planning",
@@ -224,7 +242,7 @@
         }
     },
     {
-        "id": 15,
+        "id": 16,
         "category_id": 7,
         "event_name": "Award Ceremony",
         "event_features": "Awards presentation, elegant dinner",
@@ -240,7 +258,7 @@
         }
     },
     {
-        "id": 16,
+        "id": 17,
         "category_id": 8,
         "event_name": "Charity Fundraiser",
         "event_features": "Fundraising auctions, community support",
@@ -255,22 +273,7 @@
             "image": "https://i.ibb.co/NVLwTNM/manager.jpg"
         }
     },
-    {
-        "id": 17,
-        "category_id": 1,
-        "event_name": "Conferences and Seminars",
-        "event_features": "Keynote speakers, knowledge exchange",
-        "event_image": "https://i.ibb.co/zmZC3bV/corporate.jpg",
-        "event_title": "Keynote Seminar Series",
-        "booking_price": 28000,
-        "booking_address": "789 Keynote Street, Keynoteville",
-        "manager": {
-            "name": "Oliver Davis",
-            "email": "oliver.davis@example.com",
-            "mobile": "+1 (987) 654-3210",
-            "image": "https://i.ibb.co/NVLwTNM/manager.jpg"
-        }
-    },
+    
     {
         "id": 18,
         "category_id": 2,
