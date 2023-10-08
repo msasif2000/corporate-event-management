@@ -28,14 +28,7 @@ const Event = ({ event }) => {
     }
 
     return (
-        <div data-aos="slide-down"
-            data-aos-offset="100"
-            data-aos-delay="10"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="false"
-            data-aos-anchor-placement="top-center">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center">
             <div className="card h-[420px] w-full bg-pink-100 shadow-xl shadow-orange-300">
                 <figure><img src={event_image} className="w-full h-[200px]" alt="Event Image" /></figure>
                 <div className="card-body">
