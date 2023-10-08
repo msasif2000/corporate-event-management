@@ -3,7 +3,7 @@ import { AiOutlineMail } from "react-icons/ai";
 
 const RightSidebar = () => {
     return (
-        <div className="pr-2 rounded bg-gradient-to-r md:grid md:grid-cols-2 lg:grid-cols-1 from-orange-100 from-10% via-sky-100 via-30% to-emerald-100 to-90% ...">
+        <div className="pr-2 rounded  md:grid grid-cols-2 md:grid-cols-1 bg-gradient-to-r from-orange-100 from-10% via-sky-100 via-30% to-emerald-100 to-90% ...">
 
             <div>
                 <div className="text-2xl font-bold ml-2 mt-2">Follow us on</div>

@@ -20,28 +20,43 @@ const Register = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
         console.log(name, photoURL, email, password)
+        if (password.length < 6) {
+            toast.error("Password must be at least 6 characters!", {
+                position: toast.POSITION.TOP_CENTER, autoClose: 2000,
+            });
+            return;
+        }
+
+        const specialChar = /[!@#$%^&*()_+{}[\]:;<>,.?~\\-]/;
+        const uppercase = /[A-Z]/;
+        if(!specialChar.test(password) || !uppercase.test(password)){
+            toast.error("Password must contain at least one special character and one uppercase letter!", {
+                position: toast.POSITION.TOP_CENTER, autoClose: 2500,
+            });
+            return;
+        }
         createUser(email, password)
             .then(result => {
                 console.log(result.user)
-                toast.success("Login Successful!", {
+                toast.success("Registration Successful & You're Logged in!", {
                     position: toast.POSITION.TOP_CENTER, autoClose: 1500,
-                  });
+                });
 
-              
-                  setTimeout(() => {
+
+                setTimeout(() => {
                     navigate(location.state?.from ? location.state.from : '/');
-                  }, 2000);
+                }, 2000);
             })
             .catch(error => {
                 console.log(error.message)
                 toast.error("Email already registered! Please Login now", {
                     position: toast.POSITION.TOP_CENTER, autoClose: 1500,
-                  });
+                });
 
-              
-                  setTimeout(() => {
+
+                setTimeout(() => {
                     navigate(location.state?.from ? location.state.from : '/login');
-                  }, 2000);
+                }, 2000);
             })
 
     }

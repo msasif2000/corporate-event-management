@@ -29,7 +29,7 @@ const EventDetails = () => {
             <Header></Header>
             <Navbar></Navbar>
             <div className="md:flex lg:gap-6 gap-2">
-                <div className="lg:w-2/3 lg:flex p-4 gap-4 items-center">
+                <div className="lg:w-2/3 md:w-4/6 lg:flex p-4 gap-4 items-center">
                     <div className="grid md:w-3/5 grid-cols-2 justify-center mx-auto border-2 border-blue-600 rounded mb-4">
                         <img src={currentEvent.prev_image1} alt="" className="w-full h-[150px]" />
                         <img src={currentEvent.prev_image2} alt="" className="w-full h-[150px]" />
@@ -60,7 +60,7 @@ const EventDetails = () => {
                     </div>
 
                 </div>
-                <div className="md:w-1/3">
+                <div className="lg:w-1/3 md:w-auto">
                     <RightSidebar></RightSidebar>
                 </div>
             </div>
